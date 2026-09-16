@@ -1,16 +1,18 @@
-# This is a sample Python script.
+"""
+Entry point for the fly companion project.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+Kept deliberately thin: it only decides WHAT to run, never how anything
+works. Today it runs the Phase 1 escape-circuit demo; in Phase 4 this is
+where the companion window gets launched instead.
+
+Usage:
+    python main.py
+"""
+
+import sys
+
+from scripts.demo_escape_circuit import main as run_demo
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    sys.exit(run_demo())

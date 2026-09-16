@@ -1,0 +1,9 @@
+numpy>=1.24
+pandas>=2.0
+pyarrow>=14.0
+
+# Sparse connectome matrices (optional, but strongly recommended for Phase 2)
+scipy>=1.11
+
+# UI. Classic `pygame` has no Python 3.14 wheels; pygame-ce is a drop-in fork.
+pygame-ce>=2.5.7

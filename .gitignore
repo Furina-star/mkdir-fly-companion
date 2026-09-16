@@ -1,5 +1,12 @@
-.idea/
+fly-brain-desktop-companion-guide.md
 .venv/
-venv/
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+data/
+*.feather
+build/
+dist/
+*.spec
